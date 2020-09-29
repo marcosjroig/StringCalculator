@@ -1,4 +1,4 @@
-﻿using System.IO;
+using System.IO;
 using Microsoft.Extensions.Configuration;
 
 namespace StringCalculator.Configuration
@@ -14,7 +14,7 @@ namespace StringCalculator.Configuration
             ConfigurationValues.LineBreak = configuration.GetSection("lineBreak").Value;
             ConfigurationValues.ValidationBaseRule = configuration.GetSection("validationBaseRule").Value;
             ConfigurationValues.NumbersPattern = configuration.GetSection("numbersPattern").Value;
-            ConfigurationValues.IgnoreRule = configuration.GetSection("ignoreRule").Value;
+            ConfigurationValues.MaxNumber = configuration.GetSection("maxNumber").Value;
         }
 
         private IConfigurationRoot BuildConfiguration()
