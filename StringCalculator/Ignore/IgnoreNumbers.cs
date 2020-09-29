@@ -1,6 +1,5 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
-using System.Text.RegularExpressions;
 using StringCalculator.Configuration;
 
 namespace StringCalculator.Ignore
@@ -11,9 +10,9 @@ namespace StringCalculator.Ignore
         {
             foreach (var number in numberList.ToList())
             {
-                var match = Regex.Match(number.ToString(), ConfigurationValues.IgnoreRule);
+                var maxNumber = int.Parse(ConfigurationValues.MaxNumber);
 
-                if (match.Success)
+                if (number > maxNumber)
                 {
                     numberList.RemoveAll(item => item == number);
                 }
