@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using StringCalculator.Configuration;
 using StringCalculator.Ignore;
 using Xunit;
@@ -21,7 +21,7 @@ namespace StringCalculator.Test.Ignore
         public void Remove_WhenCalled_WillRemoveOneElement()
         {
             //Arrange
-            var list = new List<int> { 1000, 2, 3 }; // 1000 will be removed
+            var list = new List<int> { 1001, 2, 3 }; // 1001 will be removed
 
             //Act
             _sut.Remove(list);
