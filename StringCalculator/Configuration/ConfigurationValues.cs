@@ -1,4 +1,4 @@
-﻿namespace StringCalculator.Configuration
+namespace StringCalculator.Configuration
 {
     public static class ConfigurationValues
     {
@@ -7,6 +7,6 @@
         public static string LineBreak { get; set; }
         public static string ValidationBaseRule { get; set; }
         public static string NumbersPattern { get; set; }
-        public static string IgnoreRule { get; set; }
+        public static string MaxNumber { get; set; }
     }
 }
