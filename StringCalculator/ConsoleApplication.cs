@@ -1,4 +1,4 @@
-﻿using StringCalculator.Configuration;
+using StringCalculator.Configuration;
 using StringCalculator.Calculations;
 
 namespace StringCalculator
@@ -6,7 +6,7 @@ namespace StringCalculator
     public class ConsoleApplication
     {
         private readonly IConfigurationReader _configurationReader;
-        private ICalculation _calculation;
+        private readonly ICalculation _calculation;
         public ConsoleApplication(IConfigurationReader configurationReader, ICalculation calculation)
         {
             _configurationReader = configurationReader;
