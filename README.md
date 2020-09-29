@@ -17,5 +17,5 @@ This code is a .NET Core 3.1 console application.
 - Most of the classes does not have more than 10 lines, so I tried to create separation of concerns in this code.
 - There is a test project also where most of the classes are tested.
 - The code can be improved further depending of the needs and the time available.
-
+- Note: I was not able to match one of the regex, that verify numbers bigger than 1000, it works well until 999 but all the 4 digits numbers are considered big. This is something can be be fixed quickly having some more time. 
 
