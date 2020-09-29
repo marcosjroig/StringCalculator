@@ -20,7 +20,7 @@ namespace StringCalculator
             _calculation.Execute("//;\\n1;2");   // Expecting 3
             _calculation.Execute("//;\\n-1;-2"); // No result as it has negatives 
             _calculation.Execute("1,\\n");       // Invalid input 
-            _calculation.Execute("//;\\n1000;50;150"); //1000 will be ignored as the rule allows all numbers from 0 to 999. Expecting 200
+            _calculation.Execute("//;\\n1000;1001;50;150"); //Ignore 1001. Expecting 1200
         }
     }
 }
